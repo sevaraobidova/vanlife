@@ -1,0 +1,26 @@
+header{
+    background-color: rgba(255, 247, 237, 1);
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem 0;
+        .nav-logo{
+            width: 20%;
+        }
+        nav{
+            display: flex;
+            gap: 3rem;
+            a{
+                font-size: var(--primary-text-size);
+                font-family: var(--primary-font-family);
+                color: var(--primary-text-colour);
+                font-weight: 600;
+                &:hover{
+                    color: rgba(22, 22, 22, 1);
+                    border-bottom: 2px solid rgba(22, 22, 22, 1);
+                }
+            }
+        }
+    }
+}

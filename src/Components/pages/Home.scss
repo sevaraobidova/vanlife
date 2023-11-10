@@ -1,0 +1,27 @@
+.home{
+    height: 76.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/img/van-background\ \(2\).png');
+    background-size: cover;
+    .home-inside{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        .home-heading{
+            color: rgba(255, 255, 255, 1);
+            font-size: 6.6rem;
+            font-family: var(--primary-font-family);
+            font-weight: 900;
+            line-height: 6.2rem;
+        }
+        .home-text{
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 1);
+            margin: 2rem 0;
+        }
+        
+    }
+}

@@ -1,0 +1,97 @@
+.vans{
+    background-color: rgba(255, 247, 237, 1);
+    .van-container{
+        padding: 10rem 0;   
+        .vans-filter{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3rem 0;
+            .buttons{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 3rem;
+                font-size: var(--primary-text-size);
+                font-family: var(--primary-font-family);
+            }
+            .clear-button{
+                font-size: var(--primary-text-size);
+                color: rgba(77, 77, 77, 1);
+                border-bottom: 2px solid rgba(77, 77, 77, 1);
+                cursor: pointer;
+            }
+        }
+        .van-cards{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 3rem;
+            .van-title{
+                max-width: 30%;
+                .van-img{
+                    border-radius: 5px;
+                }
+                .van-info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .van-card-title{
+                        font-size: 2rem;
+                        padding: 1rem 0;
+                    }
+                    .van-card-price{
+                        font-size: 2rem;
+                        span{
+                            font-size: 1.6rem;
+                            font-style: italic;
+                        }
+                    }
+                }
+                .van-type-button{
+                    padding: 1rem 2rem;
+                    border: none;
+                    border-radius: 5px;
+                    color: rgba(255, 234, 208, 1);
+                    font-family: var(--primary-font-family);
+                    font-size: var(--primary-text-size);
+                }
+                .simple{
+                    background-color: rgba(225, 118, 84, 1);
+                }
+                .rugged{
+                    background-color: rgba(17, 94, 89, 1);
+                }
+                .luxury{
+                    background-color: rgba(22, 22, 22, 1);
+                }
+                
+            }
+        }
+    }
+}
+
+@media(max-width:892px){
+    .vans{
+        .van-container{
+            .van-cards{
+                .van-title{
+                    max-width: 45%;
+                }
+            }
+        }
+    }
+}
+@media(max-width:455px){
+    .vans{
+        .van-container{
+            .van-cards{
+                .van-title{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

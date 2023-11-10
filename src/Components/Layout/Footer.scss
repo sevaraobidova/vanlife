@@ -1,0 +1,12 @@
+footer{
+    background-color: rgba(37, 37, 37, 1);
+    padding: 3rem;
+    .footer-container{
+        text-align: center;
+        .footer-text{
+            color: rgba(170, 170, 170, 1);
+            font-family: var(--primary-font-family);
+            font-size: var(--primary-font-size);
+        }
+    }
+}

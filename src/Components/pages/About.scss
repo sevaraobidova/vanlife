@@ -1,0 +1,23 @@
+.about{
+    .about-img{
+        width: 100%;
+    }
+    .about-container{
+        padding: 10rem 5rem;
+        .about-text{
+            .about-ordinary-text{
+                margin: 3rem 0;
+            }
+        }
+        .about-destination{
+            background-color: var(--secondary-colour);
+            padding: 5rem;
+            border-radius: 10px;
+            .destination-text{
+                font-size: 4.2rem;
+                margin: 2rem 0;
+                font-weight: 700;
+            }
+        }
+    }
+}
