@@ -3,6 +3,7 @@ import "./Vans.scss";
 import Button from "../Button/Button";
 // index.js or another entry point file
 import { makeServer } from "../../../service";
+import { Link } from "react-router-dom";
 
 if (process.env.NODE_ENV === "development") {
   makeServer();
@@ -62,6 +63,7 @@ export default function Vans() {
           <div className="van-cards">
             {vans.map((van) => (
               <div key={van.id} className="van-title">
+                <Link to='/vans'>
                 <img className="van-img" src={van.imageUrl} alt="" />
                 <div className="van-info">
                   <h3 className="van-card-title">{van.name}</h3>
@@ -72,6 +74,7 @@ export default function Vans() {
                 <button className={`van-type-button ${van.type} selected`}>
                   {van.type}
                 </button>
+                </Link>
               </div>
             ))}
           </div>
